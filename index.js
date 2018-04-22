@@ -51,7 +51,7 @@ function total() {
 }
 
 function removeFromCart(item) { 
-  if(Array.iscart(item)) {
+  if(cart.isArray(item)) {
   for (var i = 0; i < cart.length; i++) {
     cart.splice(i,1);
       }}
