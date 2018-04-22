@@ -51,16 +51,18 @@ function total() {
 }
 
 function removeFromCart(item) { 
-  if(cart.includes(item) === true ) {
+var element = [];
   for (var i = 0; i < cart.length; i++) {
-    cart.splice(i,1);
-      }}
-
-  else {
+    element.push(cart[i].itemName)
+    if (element.includes(item) === true) {
+      cart.splice(i,1);
+    }
+    else {
   return "That item is not in your cart.";
   }
-  
+    }
 }
+
 
 function placeOrder(cardNumber) {
   // write your code here
