@@ -53,7 +53,7 @@ function total() {
 function removeFromCart(item) { 
 var element = [];
   for (var i = 0; i < cart.length; i++) {
-    element.push(cart[i].itemName)
+    element.push(cart[i].itemName);
     if (element.includes(item) === true) {
       cart.splice(i,1);
     }
