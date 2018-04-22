@@ -57,9 +57,7 @@ var element = [];
     if (element.includes(item) === true) {
       cart.splice(i,1);
     }
-   else {
-     return "That item is not in your cart."
-   }
+
     }
 }
 
